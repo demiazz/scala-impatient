@@ -1,11 +1,7 @@
 def product(s: String): Long = {
-  if (s.length > 0) { _product(s, 1L)
-  } else 0L
-}
-
-def _product(s: String, acc: Long): Long = {
-  if (s.length > 0) { _product(s.tail, acc * s.head.toLong)
-    } else acc
+  if (s.length > 0) {
+    product(s.tail) * s.head.toLong
+  } else 1
 }
 
 println("Product of \"\" is " + product(""))
