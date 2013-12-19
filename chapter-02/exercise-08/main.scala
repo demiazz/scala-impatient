@@ -1,7 +1,4 @@
-def product(s: String): Long = {
-  if (s.length > 0) { s.foldLeft(1L)(_ * _.toLong)
-  } else 0
-}
+def product(s: String): Long = s.foldLeft(1L)(_ * _.toLong)
 
 println("Product of \"\" is " + product(""))
 println("Product of \"Hello\" is " + product("Hello"))
