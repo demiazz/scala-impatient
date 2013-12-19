@@ -13,8 +13,8 @@ def equation(x: Double, n: Int): Double = {
   }
 }
 
-printf("2  ^ 2  = %f\n",  equation(2, 2))
+printf("2  ^ 2  = %f\n", equation(2, 2))
 printf("10 ^ 9  = %f\n", equation(10, 9))
-printf("3  ^ 3  = %f\n",  equation(3, 3))
+printf("3  ^ 3  = %f\n", equation(3, 3))
 printf("2  ^ -1 = %f\n", equation(2, -1))
-printf("5  ^ 0  = %f\n",  equation(5, 0))
+printf("5  ^ 0  = %f\n", equation(5, 0))
