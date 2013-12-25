@@ -1,19 +1,10 @@
 import java.util.Scanner
 import java.io.File
-import scala.collection.mutable.HashMap
+import scala.collection.mutable.Map
 
-val in = new Scanner(new File("example.txt"))
+val in     = new Scanner(new File("example.txt"))
+val counts = Map[String, Int]() withDefault (_ => 0)
 
-val counts = new HashMap[String, Int]
-
-while (in.hasNext()) {
-  val word = in.next()
-
-  if (counts.contains(word)) {
-    counts(word) += 1
-  } else {
-    counts(word) = 1
-  }
-}
+while (in hasNext) counts(in next) += 1
 
 for ((word, count) <- counts) println(word + ": " + count)
