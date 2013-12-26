@@ -8,10 +8,10 @@ class Time(val hrs: Int, val min: Int) {
 
 }
 
-val morning      = new Time(8, 0)
-val noon         = new Time(12, 0)
-val noonWithHalf = new Time(12, 30)
+val morning   = new Time(8, 0)
+val noon      = new Time(12, 0)
+val afterNoon = new Time(12, 30)
 
-println(morning + " before than " + noon         + " => " + morning.before(noon))
-println(noon    + " before than " + morning      + " => " + noon.before(morning))
-println(noon    + " before than " + noonWithHalf + " => " + noon.before(noonWithHalf))
+println(morning + " before than " + noon      + " => " + morning.before(noon))
+println(noon    + " before than " + morning   + " => " + noon.before(morning))
+println(noon    + " before than " + afterNoon + " => " + noon.before(afterNoon))
