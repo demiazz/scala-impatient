@@ -2,13 +2,9 @@ class BankAccount {
 
   private var _balance = 0.0
 
-  def deposit(money: Double) {
-    _balance += money
-  }
+  def deposit(money: Double) = _balance += money
 
-  def withdraw(money: Double) {
-    _balance -= money
-  }
+  def withdraw(money: Double) = _balance -= money
 
   def balance = _balance
 
