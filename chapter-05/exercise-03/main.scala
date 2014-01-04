@@ -1,4 +1,4 @@
-class Time(val hrs: Int, val min: Int) {
+class Time(private val hrs: Int, private val min: Int) {
 
   def before(other: Time): Boolean = {
     hrs < other.hrs || (hrs == other.hrs && min < other.min)
