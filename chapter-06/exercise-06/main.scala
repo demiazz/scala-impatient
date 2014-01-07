@@ -1,6 +1,6 @@
-object Suite extends Enumeration {
+object Suits extends Enumeration {
 
-  type Suite = Value
+  type Suits = Value
 
   val Clover  = Value("♣")
   val Diamond = Value("♦")
@@ -8,4 +8,4 @@ object Suite extends Enumeration {
   val Spade   = Value("♠")
 }
 
-println(Suite.values)
+println(Suits.values)
